@@ -1,0 +1,178 @@
+/** 
+    ** Import
+    ** Font: Opens Sans 
+    ** Weight: 400, 500, 600, 700
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/**
+ ** Variables
+*/
+:root {
+	--clr-theme: #fd6e0a;
+	--clr-theme-light: #ffa94d;
+
+	--clr-bg: #fff8f3;
+
+	--txt-white: #fff;
+	--txt-medium: #474747;
+	--txt-light: #757575;
+	--txt-dark: #181818;
+}
+
+/**
+    ** Utilities
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	font-family: inherit;
+}
+
+.theme-background {
+	background: var(--clr-theme);
+	color: white;
+}
+.theme-text {
+	color: var(--clr-theme);
+}
+.tester {
+	display: flex;
+	justify-content: space-between;
+}
+
+.space-tester {
+	height: 200px;
+	width: 226px;
+	border: 2px solid red;
+}
+
+.btn {
+	height: 4rem;
+	margin-right: 20px;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 6px;
+
+	font-size: 1.25rem;
+	font-weight: 600;
+	transition: box-shadow 0.4s ease-in-out;
+}
+.btn:hover {
+	box-shadow: 4px 8px 12px var(--clr-theme-light);
+}
+
+.btn-inverse {
+	border: 1px solid var(--clr-theme);
+	background: var(--clr-bg);
+	color: var(--clr-theme);
+}
+
+/**
+    ** Header and Navigation Styles
+*/
+header {
+	width: 100%;
+	padding-top: 51px;
+	background: var(--clr-bg);
+	background-image: url(/images/header_bg.png), url(/images/developer.png);
+	background-repeat: no-repeat;
+	background-position: bottom right, left;
+}
+
+.navbar {
+	margin: 0 226px;
+	margin-bottom: 51px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: yellow; */
+}
+
+.navbar-title {
+	color: var(--txt-dark);
+	font-size: 45px;
+	font-weight: 800;
+}
+
+.navbar .navbar-menu {
+	flex-grow: 0.2;
+	list-style-type: none;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar .nav-item a {
+	text-decoration: none;
+	color: var(--txt-dark);
+	font-size: 1.25rem;
+}
+
+/** Banner Styles  */
+.banner {
+	margin: 0 226px;
+	margin-right: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.banner > article {
+	width: 600px;
+}
+.banner-title {
+	font-weight: 700;
+	font-size: 85px;
+}
+.banner-sub-title {
+	margin-bottom: 20px;
+	font-size: 45px;
+	font-weight: 600;
+}
+.banner-description {
+	margin-bottom: 30px;
+	color: var(--txt-light);
+	font-size: 18px;
+}
+
+/** Main  */
+main {
+	max-width: 1140px;
+	margin: 130px auto;
+}
+
+/** About */
+.about {
+	padding: 150px;
+	padding-top: 100px;
+	background: var(--clr-bg);
+	border-radius: 10px;
+}
+.section-title {
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+.section-description {
+	margin: 30px 0;
+	text-align: center;
+	color: var(--txt-light);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0em;
+}
+.about-info-container {
+	display: flex;
+}
+.about .info-title {
+	font-size: 20px;
+	color: var(--txt-medium);
+}
