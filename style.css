@@ -11,13 +11,12 @@
 :root {
 	--clr-theme: #fd6e0a;
 	--clr-theme-light: #ffa94d;
-
+	--clr-dark: #181818;
 	--clr-bg: #fff8f3;
 
-	--txt-white: #fff;
-	--txt-medium: #474747;
-	--txt-light: #757575;
-	--txt-dark: #181818;
+	--clr-light: #fff;
+	--txt-medium: #757575;
+	--txt-dark: #474747;
 }
 
 /**
@@ -33,6 +32,10 @@
 
 body {
 	font-family: inherit;
+}
+
+section {
+	margin-top: 130px;
 }
 
 .theme-background {
@@ -96,7 +99,7 @@ header {
 }
 
 .navbar-title {
-	color: var(--txt-dark);
+	color: var(--clr-dark);
 	font-size: 45px;
 	font-weight: 800;
 }
@@ -112,7 +115,7 @@ header {
 
 .navbar .nav-item a {
 	text-decoration: none;
-	color: var(--txt-dark);
+	color: var(--clr-dark);
 	font-size: 1.25rem;
 }
 
@@ -138,7 +141,7 @@ header {
 }
 .banner-description {
 	margin-bottom: 30px;
-	color: var(--txt-light);
+	color: var(--txt-medium);
 	font-size: 18px;
 }
 
@@ -156,6 +159,7 @@ main {
 	border-radius: 10px;
 }
 .section-title {
+	margin-bottom: 30px;
 	font-size: 35px;
 	font-weight: 700;
 	text-align: center;
@@ -163,7 +167,7 @@ main {
 .section-description {
 	margin: 30px 0;
 	text-align: center;
-	color: var(--txt-light);
+	color: var(--txt-medium);
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30px;
@@ -171,8 +175,40 @@ main {
 }
 .about-info-container {
 	display: flex;
+	justify-content: space-around;
 }
 .about .info-title {
 	font-size: 20px;
+	color: var(--txt-medium);
+}
+.about .info-description {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--txt-dark);
+}
+
+/** What I do */
+
+.description-container {
+	width: 900px;
+	margin: 30px auto;
+}
+.skills-container {
+	display: flex;
+	gap: 24px;
+}
+.skill {
+	padding: 40px;
+	border-radius: 5px;
+	background: var(--clr-light);
+	box-shadow: 0 6px 50px rgba(0, 0, 0, 0.2);
+}
+.skill-title {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.skill-description {
 	color: var(--txt-medium);
 }
